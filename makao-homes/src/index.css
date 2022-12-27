@@ -11,6 +11,58 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 } */
-form{
+/* form{
   display: block;
+  background-color: brown;
+} */
+.addProperty{
+    position: relative;
+      top: 5%;
+      left: 40%;
+      width: 400px;
+      height: 700px;
+      background-color: gray;
+      margin-top: 100px;
+     
+}
+form input{
+  display: block;
+  margin-top: 10px;
+  margin-left: 50px;
+  width: 300px;
+  height: 25px;
+  border-style: ;
+  
+  
+}
+form textarea {
+  display: block;
+  margin-top: 20px;
+  margin-left: 50px;
+  width: 300px;
+  border-radius: 10px;
+  height: 80px;
+
+}
+form button {
+  
+ background-color: green;
+ margin-left: 200px;
+ margin-top: 20px;
+ width: 100px;
+ height: 40px;
+ align-items: center;
+ border-radius: 10px;
+ border-style: none;
+
+}
+form label{
+  margin-left: 50px;
+  margin-top: 10px;
+}
+h3{
+  align-content: center;
+}
+#sellTitle{
+  margin-left:180px ;
 }
