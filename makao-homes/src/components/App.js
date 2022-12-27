@@ -1,5 +1,5 @@
-import './App.css';
-import AddProperty from './components/AddProperty';
+
+import AddProperty from './AddProperty';
 
 function App() {
   return (
