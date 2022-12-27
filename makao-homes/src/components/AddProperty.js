@@ -3,18 +3,20 @@ import React from 'react'
 function AddProperty() {
   return (
     <div>
-      <h3>Sell With Us</h3>
+      <div className='addProperty'>
+      <h3 id='sellTitle'>Sell With Us</h3>
       <form>
-        Property Name<input type="text" />
-        Location<input type="text" />
-        Price<input type="text" />
-        Image URL<input type="text" />
-        Description<textarea></textarea>
-        Features<textarea></textarea>
-        <button>Submit</button>
+        <label>Property Name</label><input type="text" />
+        <label>Location</label><input type="text" />
+        <label>Price</label><input type="text" />
+        <label>Image URL</label><input type="text" />
+        <label>Description</label><textarea></textarea>
+        <label>Features</label><textarea></textarea>
+        <button type='submit'>Submit</button>
 
 
       </form>
+      </div>
     </div>
   )
 }
