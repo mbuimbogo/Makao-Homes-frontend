@@ -1,11 +1,13 @@
 
-import AddProperty from './AddProperty';
+// import AddProperty from './AddProperty';
+import Checkout from './Checkout';
 
 function App() {
   return (
     <div className="App">
       
-      <AddProperty />
+      {/* <AddProperty /> */}
+      <Checkout/>
         </div>
   );
 }
