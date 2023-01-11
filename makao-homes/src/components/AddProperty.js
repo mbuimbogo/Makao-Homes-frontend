@@ -7,10 +7,14 @@ function AddProperty() {
   const[ImageURL,setImageURL]=useState('')
   const[description,setDescription]=useState('')
   const[features,setFeature]=useState('')
+  const [error,setError]=useState([])
 
 
   function handleFormSubmit(e){
     e.preventDefault()
+    
+    if (name.length>0 || location.length>0 || price.length>0 || ImageURL.length>0
+      || description.length>0 || features.length>0){
     const propertyData={
       name:name,
       location:location,
@@ -19,6 +23,8 @@ function AddProperty() {
       description:description,
       features:features,
     }
+  
+  
     // console.log(propertyData)
     fetch(' http://localhost:4000/newproperty',{
       method:"POST",
@@ -31,7 +37,13 @@ function AddProperty() {
     .then((r)=>r.json())
     .then((newData)=>console.log(newData))
 
+    setError([])
   }
+  else{
+    setError(["Kindly fill the highlighted parts"])
+    
+  }
+}
   return (
     <div>
       <div className='addProperty'>
@@ -47,6 +59,14 @@ function AddProperty() {
 
 
       </form>
+
+      {error.length > 0
+      ? error.map((error, index) => (
+          <p key={index} style={{ color: "red" }}>
+            {error}
+          </p>
+        ))
+      : null}
       </div>
     </div>
   )
