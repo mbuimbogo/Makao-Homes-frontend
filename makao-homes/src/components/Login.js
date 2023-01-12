@@ -64,16 +64,12 @@ function Login(props) {
     return (
       <div className="Auth-form-container">
          
-<hr
-   style={{
-   background: "#47B5FF",
-   height: "2px",
-   border: "none",
-   }}
-/>
+
         <form className="Auth-form" onSubmit={handleSubmit}>
           <div className="Auth-form-content">
-            <h3 className="Auth-form-title">Sign In</h3>
+            <div><hr /></div>
+            <h3 className="Auth-form-title">WELCOME BACK, PLEASE LOGIN</h3>
+            <div><hr /></div>
             <div className="text-center">
               Not registered yet?{" "}
               <span className="link-primary" onClick={navigateToSignUp}>
@@ -114,9 +110,24 @@ function Login(props) {
             <div className="text-center">
                 Forgot Password?{" "}
                 <span className="link-primary" onClick={navigateToResetPassword}>
-                  Reset Password
+                  Reset Here
                 </span>
-              </div>
+
+            </div>
+            <div><hr />
+            </div>
+            <div className="text-center">
+              <button className="btn btn-danger" onClick={navigateToResetPassword}>
+                Register To View House
+              </button>
+
+              <button className="btn btn-danger" onClick={navigateToResetPassword}>
+                Register To List Houses
+              </button>
+            
+           
+            </div>
+
           </div>
         </form>
       </div>

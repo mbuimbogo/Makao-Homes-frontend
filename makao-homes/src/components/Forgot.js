@@ -52,7 +52,7 @@ function Forgot(){
               />
             </div>
             <div className="d-grid gap-2 mt-3">
-              <button type="submit" className="btn btn-info">
+              <button type="submit" className="btn btn-primary">
                 Reset Password
               </button>
             </div>
