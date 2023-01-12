@@ -42,10 +42,11 @@
   margin: auto;
 }
 
-.btn-danger {
+.btn-info {
   background-color: #40A989 !important;
   width: 200px;
   margin: auto;
   margin-left: 20px;
   margin-right: 20px;
+  color: white;
 } 

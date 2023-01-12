@@ -36,7 +36,7 @@ function Forgot(){
             <div className="text-center">
               Not registered yet?{" "}
               <span className="link-primary" onClick={navigateToSignUp}>
-                Sign Up
+                Create Account
               </span>
             </div>
             <div className="form-group mt-3">
@@ -60,7 +60,7 @@ function Forgot(){
             <div className="text-center">
               Have An Account?{" "}
               <span className="link-primary" onClick={navigateToSignIn}>
-                Sign In
+                Login
               </span>
             </div>
           </div>
