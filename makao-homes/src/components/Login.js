@@ -1,121 +1,118 @@
-import React, { useState } from 'react';
-import { Link, Redirect } from 'react-router-dom';
-import './Login.css';
 
-function Login({
-  userPatient,
-  setUserPatient,
-  userPractitioner,
-  setUserPractitioner,
-}) {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [pracCheckbox, setPracCheckbox] = useState(false);
-  const [errors, setErrors] = useState('');
-  const [userPatientSuccess, setUserPatientSuccess] = useState(false)
-  const [userPractitionerSuccess, setUserPractitionerSuccess] = useState(false)
-  // const errors = ["Invalid Username or Password"]
+import React, { useState } from "react"
+import { useNavigate } from 'react-router-dom'
+// first install bootstrap
+// npm install -save bootstrap
+// then install react dom
+// npm install --save react-router-dom
+function Login(props) {
+  // form input controls
+  const [state, setState] = useState({
+    email: "",
+    password: ""
+  });
+  const userdetails = props.userdetails;
+  const setUserdetails = props.setUserdetails;
 
-  function handleLoginSubmit(e) {
-    e.preventDefault();
-    // setPracCheckbox(false);
-    setErrors([]);
-    fetch(`http://localhost:3000/login`, {
+  // const handleChange = (event) => {
+  //   setState((prevProps) => ({
+  //     ...prevProps,
+  //     [event.target.name]: event.target.value
+  //   }));
+  // };
+  function handleSubmit(evt) {
+    evt.preventDefault();
+    fetch('', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
+        'Accept': 'application/json',
       },
-      body: JSON.stringify({
-        email,
-        password,
-      }),
-    }).then((response) => {
-      if (response.ok) {
-        response.json().then((user) => {
-          setUserPatient(user);
-          setUserPatientSuccess(true)
-          localStorage.setItem("token", user.jwt)
-        });
-      } else {
-        response.json().then((err) => setErrors(err.errors));
-        console.log(response);
-      }
+      body: JSON.stringify(state)
+    })
+      .then(res => res.json())
+      .then(data => {
+        setUserdetails([
+          ...userdetails,
+          data
+        ]);
+      })
+  }
+
+  function handleChange(e) {
+    setState({
+      ...state,
+      [e.target.name]: e.target.value,
     });
   }
-  console.log(userPatient);
 
-  if (userPatientSuccess) {
-    return <Redirect to="/patients/me" />
-  }
-  if (userPractitionerSuccess) {
-    return <Redirect to='/patients/me' />;
-  }
+  // const handleSubmit = (event) => {
+  //   event.preventDefault();
+  //   console.log(state);
 
-  return (
-    <div className='login-main-container'>
-      <div className='login-form-container'>
-        <form className='login-form' onSubmit={handleLoginSubmit}>
-          <h1>Login</h1>
-          <p>Schedule an appointment now</p>
-          <input
-            type='email'
-            placeholder='Email'
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-          <input
-            type='password'
-            placeholder='Password'
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
-          <span id='practitioner-check'>
-            <input
-              type='checkbox'
-              value={pracCheckbox}
-              onChange={() => setPracCheckbox(!pracCheckbox)}
-            />
-            &nbsp; Log in as practitioner
-          </span>
-          <button type='submit'>Log In</button>
-        </form>
-        <br />
-        {errors ? (
-          <>
-            <div className='login-error-display'>
-              {errors?.map((error) => {
-                console.log(error);
-                return (
-                  <p key={error} style={{ color: 'red' }}>
-                    {error}
-                  </p>
-                );
-              })}
+  // };
+  
+  // navigate to sign up form
+  const navigate = useNavigate()
+  const navigateToSignUp = () => {
+    navigate('/signup');
+  };
+  // navigation toreset password
+  const navigateToResetPassword = () => {
+    navigate("/resetpassword")
+  }  
+    return (
+      <div className="Auth-form-container">
+        <form className="Auth-form" onSubmit={handleSubmit}>
+          <div className="Auth-form-content">
+            <h3 className="Auth-form-title">Sign In</h3>
+            <div className="text-center">
+              Not registered yet?{" "}
+              <span className="link-danger" onClick={navigateToSignUp}>
+                Sign Up
+              </span>
             </div>
-            <br />
-          </>
-        ) : (
-          ''
-        )}
-        <div className='already'>
-          <hr />
-          <p>
-            Forgot password?{' '}
-            <Link to='/reset-password' id='reset-text'>
-              Reset
-            </Link>
-          </p>
-          <p>
-            Don't have an account? &nbsp;
-            <Link to={`/signup`}>
-              <button type='button'>Sign Up</button>
-            </Link>
-          </p>
-        </div>
+            <div className="form-group mt-3">
+              <label>Email address</label>
+              <input
+                type="email"
+                className="form-control mt-1"
+                placeholder="Enter email"
+                name="email"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                value={state.email}
+                onChange={handleChange}
+                required
+              />
+            </div>
+            <div className="form-group mt-3">
+              <label>Password</label>
+              <input
+                type="password"
+                className="form-control mt-1"
+                placeholder="Enter password"
+                name="password"
+                minLength={8}
+                value={state.password}
+                onChange={handleChange}
+                required
+              />
+            </div>
+            <div className="d-grid gap-2 mt-3">
+              <button type="submit" className="btn btn-danger">
+                Sign In
+              </button>
+            </div>
+            <div className="text-center">
+                Forgot Password?{" "}
+                <span className="link-danger" onClick={navigateToResetPassword}>
+                  Reset Password
+                </span>
+              </div>
+          </div>
+        </form>
       </div>
-      <div className='login-img'></div>
-    </div>
-  );
-}
+    )
 
-export default Login;
+}
+export default Login
