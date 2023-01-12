@@ -117,11 +117,11 @@ function Login(props) {
             <div><hr />
             </div>
             <div className="text-center">
-              <button className="btn btn-info" onClick={navigateToResetPassword}>
-                Register to view house
+              <button className="btn btn-info" onClick={navigateToSignUp}>
+                Register to view houses
               </button>
 
-              <button className="btn btn-info" onClick={navigateToResetPassword}>
+              <button className="btn btn-info" onClick={navigateToSignUp}>
                 Register to list houses
               </button>
             

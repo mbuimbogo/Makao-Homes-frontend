@@ -53,13 +53,8 @@ function Signup(props){
         <div className="Auth-form-container">
           <form className="Auth-form" onSubmit={handleSubmit}>
             <div className="Auth-form-content">
-              <h3 className="Auth-form-title">Sign Up</h3>
-              <div className="text-center">
-                Already registered?{" "}
-                <span className="link-primary" onClick={navigateToSignIn}>
-                  Login
-                </span>
-              </div>
+              <h3 className="Auth-form-title">Create Account</h3>
+   
               <div className="form-group mt-3">
                 <label>First Name</label>
                 <input
@@ -128,12 +123,12 @@ function Signup(props){
                   Create Account
                 </button>
               </div>
-              <div className="text-center">
-                Forgot Password?{" "}
-                <span className="link-primary" onClick={navigateToResetPassword}>
-                  Reset Password
-                </span>
-              </div>
+                <div className="text-center">
+                  Already registered?{" "}
+                  <span className="link-primary" onClick={navigateToSignIn}>
+                    Login
+                  </span>
+                </div>
             </div>
           </form>
         </div>

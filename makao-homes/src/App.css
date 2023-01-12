@@ -29,8 +29,8 @@
 }
 .btn-primary {
   background-color: #40A989 !important;
-  width: 200px;
-  margin: auto;
+  width: 200px !important;
+  margin: auto !important;
   /* margin-left: 20px;
   margin-right: 20px; */
 } 
@@ -38,15 +38,12 @@
   align-items: center !important;
 
 }
-.intro{
-  margin: auto;
-}
 
 .btn-info {
   background-color: #40A989 !important;
-  width: 200px;
+  width: 300px;
   margin: auto;
   margin-left: 20px;
   margin-right: 20px;
-  color: white;
+  color: white !important;
 } 
