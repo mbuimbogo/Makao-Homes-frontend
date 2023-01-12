@@ -57,7 +57,7 @@ function Signup(props){
               <div className="text-center">
                 Already registered?{" "}
                 <span className="link-primary" onClick={navigateToSignIn}>
-                  Sign In
+                  Login
                 </span>
               </div>
               <div className="form-group mt-3">
@@ -110,9 +110,22 @@ function Signup(props){
                   required
                 />
               </div>
+              <div className="form-group mt-3">
+                <label>Confirm Password</label>
+                <input
+                  type="password"
+                  className="form-control mt-1"
+                  placeholder="Password"
+                  name="password"
+                  minLength={8}
+                  value={state.password}
+                  onChange={handleChange}
+                  required
+                />
+              </div>
               <div className="d-grid gap-2 mt-3">
-                <button type="submit" className="btn btn-danger">
-                  Sign Up
+                <button type="submit" className="btn btn-xs btn-primary">
+                  Create Account
                 </button>
               </div>
               <div className="text-center">

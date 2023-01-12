@@ -63,17 +63,25 @@ function Login(props) {
   }  
     return (
       <div className="Auth-form-container">
+         
+<hr
+   style={{
+   background: "#47B5FF",
+   height: "2px",
+   border: "none",
+   }}
+/>
         <form className="Auth-form" onSubmit={handleSubmit}>
           <div className="Auth-form-content">
             <h3 className="Auth-form-title">Sign In</h3>
             <div className="text-center">
               Not registered yet?{" "}
-              <span className="link-danger" onClick={navigateToSignUp}>
-                Sign Up
+              <span className="link-primary" onClick={navigateToSignUp}>
+                Create Account
               </span>
             </div>
             <div className="form-group mt-3">
-              <label>Email address</label>
+              <label>username</label>
               <input
                 type="email"
                 className="form-control mt-1"
@@ -99,13 +107,13 @@ function Login(props) {
               />
             </div>
             <div className="d-grid gap-2 mt-3">
-              <button type="submit" className="btn btn-danger">
-                Sign In
+              <button type="submit" className="btn btn-primary">
+                Login
               </button>
             </div>
             <div className="text-center">
                 Forgot Password?{" "}
-                <span className="link-danger" onClick={navigateToResetPassword}>
+                <span className="link-primary" onClick={navigateToResetPassword}>
                   Reset Password
                 </span>
               </div>
