@@ -8,6 +8,8 @@ function AddProperty() {
   const[description,setDescription]=useState('')
   const[features,setFeature]=useState('')
   const [error,setError]=useState([])
+  const [propertyType,setPropertyType]=useState();
+  // const [propertyType,setPropertyType]=useState()
 
 
   function handleFormSubmit(e){
@@ -20,6 +22,7 @@ function AddProperty() {
       location:location,
       price:price,
       ImageURL:ImageURL,
+      propertyType:propertyType,
       description:description,
       features:features,
     }
@@ -53,9 +56,20 @@ function AddProperty() {
         <label>Location</label><input type="text" value={location} onChange={(e)=>setLocation(e.target.value)}/>
         <label>Price</label><input type="number" value={price} onChange={(e)=>setPrice(e.target.value)} />
         <label>Image URL</label><input type="text" value={ImageURL} onChange={(e)=>setImageURL(e.target.value)} />
-        <label>Description</label><textarea input="true" value={description} onChange={(e)=>setDescription(e.target.value)}></textarea>
+        <div className='propType'>
+        <label>Property type</label><select  value={propertyType} onChange={e=>setPropertyType(e.target.value)}>
+          <option>Penthouse</option>
+          <option>Residential Building</option>
+          <option>Residential Plot</option>
+          <option>Apartment</option>
+          <option>Townhouse</option>
+          <option>Residential floor</option>
+          <option>Villas</option>
+        </select>
+        </div>
+        <label className='desc'>Description</label><textarea input="true" value={description} onChange={(e)=>setDescription(e.target.value)}></textarea>
         <label>Features</label><textarea input="true" value={features} onChange={(e)=>setFeature(e.target.value)}></textarea>
-        <button type='submit'>Submit</button>
+        <button type='submit'>ADD PROPERTY</button>
 
 
       </form>
