@@ -21,8 +21,10 @@ code {
   left: 40%;
   width: 400px;
   height: 600px;
-  background-color: gray;
+  background-color:lightyellow;
   margin-top: 100px;
+  border-radius: 10px;
+  border-style: solid;
      
 }
 form input{
@@ -65,4 +67,69 @@ h3{
 }
 #sellTitle{
   margin-left:180px ;
+}
+body{
+  background-color: white;
+}
+.dropdown{
+  padding: 12px;
+  max-width: 320px;
+  position: relative;
+  /* background-color: white; */
+  border-radius: 5px;
+}
+.custom-dropdown-selection{
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px 16px;
+  cursor: pointer;
+  position: relative;
+}
+.custom-dropdown-selection::after{
+  display: block;
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid #0003;
+  border-bottom: 2px solid #0003;
+  transform: rotate(45deg);
+  position:absolute;
+  right: 15px;
+  top:12px;
+
+} 
+
+ .custom-dropdown-selection.visible::after{
+  top:18px;
+  transform: rotate(-135deg);
+
+
+}
+
+.dropdown .items-holder{
+  border-radius: 5px;
+  background-color: white;
+  position:absolute;
+  top: 40px;
+  width: 320px;
+
+}
+.dropdown .items-holder .dropdown-item{
+  padding: 10px, 16px;
+  cursor: pointer;
+}
+
+.dropdown .items-holder .dropdown-item:hover{
+  background-color:bisque
+}
+.Checkout{
+
+  background-color:darkgray;
+  width: 500px;
+  height: 700px;
+  position: relative;
+  top: 5%;
+  left: 40%;
+  margin-top: 100px;
+
 }
