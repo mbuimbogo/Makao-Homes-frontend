@@ -24,7 +24,7 @@ function AddProperty() {
       ImageURL:ImageURL,
       propertyType:propertyType,
       description:description,
-      features:features,
+      
     }
   
   
@@ -68,7 +68,7 @@ function AddProperty() {
         </select>
         </div>
         <label className='desc'>Description</label><textarea input="true" value={description} onChange={(e)=>setDescription(e.target.value)}></textarea>
-        <label>Features</label><textarea input="true" value={features} onChange={(e)=>setFeature(e.target.value)}></textarea>
+       
         <button type='submit'>ADD PROPERTY</button>
 
 
