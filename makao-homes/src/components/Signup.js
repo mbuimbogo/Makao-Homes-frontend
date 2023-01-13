@@ -119,7 +119,7 @@ function Signup(props){
                 />
               </div>
               <div className="d-grid gap-2 mt-3">
-                <button type="submit" className="btn btn-xs btn-primary">
+                <button type="submit" className="btn btn-info" style={{margin: "auto"}}>
                   Create Account
                 </button>
               </div>

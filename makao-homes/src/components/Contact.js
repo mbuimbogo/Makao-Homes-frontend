@@ -20,10 +20,10 @@ function Contact(props){
     console.log(state);
   };
     return (
-        <div className="Auth-form-container">
+        <div className="Auth-form-container1">
           <form className="Auth-form" onSubmit={handleSubmit}>
             <div className="Auth-form-content">
-              <h3 className="Auth-form-title">Contact Us</h3>
+              <h3 className="Auth-form-title">Send us message</h3>
               <div className="form-group mt-3">
                 <label>Full Name</label>
                 <input
@@ -75,7 +75,7 @@ function Contact(props){
                 />
               </div>
               <div className="d-grid gap-2 mt-3">
-                <button type="submit" className="btn btn-danger">
+                <button type="submit" className="btn btn-info" style={{margin: "auto"}}>
                   Send Message
                 </button>
               </div>

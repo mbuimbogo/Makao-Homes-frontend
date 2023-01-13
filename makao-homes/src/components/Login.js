@@ -1,6 +1,9 @@
 
 import React, { useState } from "react"
 import { useNavigate } from 'react-router-dom'
+import {HiOutlineMenuAlt4} from 'react-icons/hi';
+import {FaRegTimesCircle} from 'react-icons/fa' ;
+import {BsFillHouseFill} from 'react-icons/bs'
 // first install bootstrap
 // npm install -save bootstrap
 // then install react dom
@@ -63,6 +66,7 @@ function Login(props) {
   }  
     return (
       <div className="Auth-form-container">
+       
          
 
         <form className="Auth-form" onSubmit={handleSubmit}>
@@ -103,7 +107,7 @@ function Login(props) {
               />
             </div>
             <div className="d-grid gap-2 mt-3">
-              <button type="submit" className="btn btn-primary">
+              <button type="submit" className="btn btn-info" style={{margin: "auto"}}>
                 Login
               </button>
             </div>

@@ -6,6 +6,15 @@
   height: 100vh;
 }
 
+.Auth-form-container1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  height: 100vh;
+  margin: auto;
+  background-color: white;
+}
 .Auth-form {
   width: 1420px;
   /* box-shadow: rgb(0 0 0 / 16%) 1px 1px 10px; */
