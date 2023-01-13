@@ -15,12 +15,14 @@ code {
   display: block;
   background-color: brown;
 } */
+
+/* Add Property Styling */
 .addProperty{
   position: relative;
   top: 5%;
   left: 40%;
   width: 400px;
-  height: 600px;
+  height: 650px;
   background-color:lightyellow;
   margin-top: 100px;
   border-radius: 10px;
@@ -32,8 +34,9 @@ form input{
   margin-top: 10px;
   margin-left: 50px;
   width: 300px;
-  height: 25px;
+  height: 30px;
   border-style:none;
+  font-size: 18px;
   
   
 }
@@ -43,13 +46,13 @@ form textarea {
   margin-left: 50px;
   width: 300px;
   border-radius: 10px;
-  height: 80px;
+  height: 50px;
 
 }
 form button {
   
  background-color: green;
- margin-left: 200px;
+ margin-left: 150px;
  margin-top: 20px;
  width: 100px;
  height: 40px;
@@ -60,13 +63,31 @@ form button {
 }
 form label{
   margin-left: 50px;
-  margin-top: 10px;
+  margin-top: 50px;
+  font-size:large;
+}
+.propType select{
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 5px;
+}
+.propType label{
+  margin-left: 50px;
+}
+.propType{
+  padding: 10px;
+}
+
+form label .desc{
+  padding-top: 10px;
 }
 h3{
   align-content: center;
 }
 #sellTitle{
-  margin-left:180px ;
+  margin-left:150px ;
+  font-size: large;
+  font: bolder;
 }
 body{
   background-color: white;
