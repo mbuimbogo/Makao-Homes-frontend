@@ -6,7 +6,6 @@ function AddProperty() {
   const[price,setPrice]=useState('')
   const[ImageURL,setImageURL]=useState('')
   const[description,setDescription]=useState('')
-  const[features,setFeature]=useState('')
   const [error,setError]=useState([])
   const [propertyType,setPropertyType]=useState();
   // const [propertyType,setPropertyType]=useState()
@@ -16,7 +15,7 @@ function AddProperty() {
     e.preventDefault()
     
     if (name.length>0 || location.length>0 || price.length>0 || ImageURL.length>0
-      || description.length>0 || features.length>0){
+      || description.length>0){
     const propertyData={
       name:name,
       location:location,
