@@ -4,6 +4,7 @@ import Navbar from "./components/navbar/Navbar";
 import Login from "./components/Login"
 import Signup from "./components/Signup";
 import Forgot from "./components/Forgot"
+import Contact from "./components/Contact"
 import "./App.css"
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -16,6 +17,7 @@ function App() {
         {/* <Route path="/" element={<Home />} /> */}
          <Route path="/signup" element={<Signup />} /> 
         <Route path="/resetpassword" element={<Forgot />} /> 
+        <Route path="/contactus" element={<Contact />} />
       
       </Routes>
     </BrowserRouter>
