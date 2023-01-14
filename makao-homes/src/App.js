@@ -1,9 +1,9 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Login from "./components/Login"
-import Signup from "./components/Signup";
-import Forgot from "./components/Forgot"
-import Contact from "./components/Contact"
+import Login from "./components/Login/Login"
+import Signup from "./components/Signup/Signup";
+import Forgot from "./components/Forgot/Forgot"
+import Contact from "./components/Contact/Contact"
 import "./App.css"
 import "bootstrap/dist/css/bootstrap.min.css";
 

@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom'
 import React, { useState } from "react"
+import "../Login/Login.css"
 
 function Forgot(){
   // navigation to sign in

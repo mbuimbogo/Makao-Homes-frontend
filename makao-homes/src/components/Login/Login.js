@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom'
 import {HiOutlineMenuAlt4} from 'react-icons/hi';
 import {FaRegTimesCircle} from 'react-icons/fa' ;
 import {BsFillHouseFill} from 'react-icons/bs'
+import "./Login.css"
 // first install bootstrap
 // npm install -save bootstrap
 // then install react dom
