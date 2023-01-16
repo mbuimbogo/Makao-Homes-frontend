@@ -64,10 +64,10 @@ const Testimonial = () => {
                 )
              })}
              <button className="prev" onClick={() => setIndex(index - 1)}>
-               <i className="fas fa-arrow-right"/>
+               <i className="fa fa-arrow-right"/>
              </button>
              <button className="next" onClick={() => setIndex(index + 1)}>
-             <i className="fas fa-arrow-left"/>
+             <i className="fa fa-arrow-right"/>
            </button>
            </div>
         </section>

@@ -38,3 +38,15 @@ const people = [
 ];
 
 export default people
+
+
+export const footer = [
+    {
+      title: "Company",
+      text: [{ list: "Privacy Policy" }, { list: "Terms and Conditions" }],
+    },
+    {
+      title: "About",
+      text: [{ list: "Testimonials" }, { list: "Contact Us"}],
+    },
+  ]
