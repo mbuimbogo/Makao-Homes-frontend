@@ -1,58 +1,37 @@
 {
   "newproperty": [
     {
-      "name": "ssss",
-      "location": "ssss",
-      "price": "",
-      "ImageURL": "sss",
-      "description": "ssss",
-      "features": "ssss",
-      "id": 1
+      "name": "dhdhhd",
+      "location": "dddd",
+      "price": "444",
+      "ImageURL": "dddd",
+      "propertyType": "Residential Plot",
+      "description": "eeeeeeeeeeeeed",
+      "id": 7
     },
     {
-      "name": "ssss",
-      "location": "ssss",
-      "price": "",
-      "ImageURL": "sss",
-      "description": "ssss",
-      "features": "ssss",
-      "id": 2
+      "name": "Hapa",
+      "location": "Kisumu",
+      "price": "78000",
+      "ImageURL": "jsdjjdjd",
+      "description": "dhhdhhhdhd",
+      "id": 8
     },
     {
-      "name": "ssss",
-      "location": "ssss",
-      "price": "",
-      "ImageURL": "sss",
-      "description": "ssss",
-      "features": "ssss",
-      "id": 3
+      "name": "Jumas",
+      "location": "Kisumu",
+      "price": "78000",
+      "ImageURL": "jsdjjdjd",
+      "description": "dhhdhhhdhd",
+      "id": 9
     },
     {
-      "name": "ssss",
-      "location": "ssss",
-      "price": "",
-      "ImageURL": "sss",
-      "description": "ssss",
-      "features": "ssss",
-      "id": 4
-    },
-    {
-      "name": "ssss",
-      "location": "ssss",
-      "price": "",
-      "ImageURL": "sss",
-      "description": "ssss",
-      "features": "ssss",
-      "id": 5
-    },
-    {
-      "name": "ssss",
-      "location": "ssss",
-      "price": "",
-      "ImageURL": "sss",
-      "description": "ssss",
-      "features": "ssss",
-      "id": 6
+      "name": "Premier",
+      "location": "Kisumu",
+      "price": "78000",
+      "ImageURL": "jsdjjdjd",
+      "description": "dhhdhhhdhd",
+      "id": 10
     }
   ]
 }
