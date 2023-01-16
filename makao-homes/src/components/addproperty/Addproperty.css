@@ -1,0 +1,81 @@
+.addProperty {
+    position: relative;
+    top: 5%;
+    left: 40%;
+    width: 400px;
+    height: 650px;
+    background-color: lightyellow;
+    margin-top: 100px;
+    border-radius: 10px;
+    border-style: solid;
+
+}
+
+form input {
+    display: block;
+    margin-top: 10px;
+    margin-left: 50px;
+    width: 300px;
+    height: 30px;
+    border-style: none;
+    font-size: 18px;
+
+
+}
+
+form textarea {
+    display: block;
+    margin-top: 20px;
+    margin-left: 50px;
+    width: 300px;
+    border-radius: 10px;
+    height: 50px;
+
+}
+
+form button {
+
+    background-color: green;
+    margin-left: 150px;
+    margin-top: 20px;
+    width: 100px;
+    height: 40px;
+    align-items: center;
+    border-radius: 10px;
+    border-style: none;
+
+}
+
+form label {
+    margin-left: 50px;
+    margin-top: 50px;
+    font-size: large;
+}
+
+.propType select {
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.propType label {
+    margin-left: 50px;
+}
+
+.propType {
+    padding: 10px;
+}
+
+form label .desc {
+    padding-top: 10px;
+}
+
+h3 {
+    align-content: center;
+}
+
+#sellTitle {
+    margin-left: 150px;
+    font-size: large;
+    font: bolder;
+}
