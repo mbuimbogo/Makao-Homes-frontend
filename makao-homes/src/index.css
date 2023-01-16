@@ -1,114 +1,4 @@
-/* body {
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap'); 
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-
-
-body {
-  margin: 0;
-  font-family: 'Poppins', 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-} */
-/* form{
-  display: block;
-  background-color: brown;
-} */
-
-/* Add Property Styling */
-.addProperty{
-  position: relative;
-  top: 5%;
-  left: 40%;
-  width: 400px;
-  height: 650px;
-  background-color:lightyellow;
-  margin-top: 100px;
-  border-radius: 10px;
-  border-style: solid;
-     
-}
-form input{
-  display: block;
-  margin-top: 10px;
-  margin-left: 50px;
-  width: 300px;
-  height: 30px;
-  border-style:none;
-  font-size: 18px;
-  
-  
-}
-form textarea {
-  display: block;
-  margin-top: 20px;
-  margin-left: 50px;
-  width: 300px;
-  border-radius: 10px;
-  height: 50px;
-
-}
-form button {
-  
- background-color: green;
- margin-left: 150px;
- margin-top: 20px;
- width: 100px;
- height: 40px;
- align-items: center;
- border-radius: 10px;
- border-style: none;
-
-}
-form label{
-  margin-left: 50px;
-  margin-top: 50px;
-  font-size:large;
-}
-.propType select{
-  font-weight: bold;
-  padding: 5px;
-  border-radius: 5px;
-}
-.propType label{
-  margin-left: 50px;
-}
-.propType{
-  padding: 10px;
-}
-
-form label .desc{
-  padding-top: 10px;
-}
-h3{
-  align-content: center;
-}
-#sellTitle{
-  margin-left:150px ;
-  font-size: large;
-  font: bolder;
-}
 body{
   background-color: white;
 }
@@ -163,17 +53,7 @@ body{
 .dropdown .items-holder .dropdown-item:hover{
   background-color:bisque
 }
-.Checkout{
 
-  background-color:darkgray;
-  width: 500px;
-  height: 700px;
-  position: relative;
-  top: 5%;
-  left: 40%;
-  margin-top: 100px;
-
-}
 .container {
   max-width: 1230px;
   margin:auto;
@@ -196,14 +76,7 @@ body{
   border-bottom: none;
 }
 /* Checkout Styling */
-.formContainer{
-  background-color:darkgray;
-  max-width: 600px;
-  height: 700px;
-  width: 50%;
-  margin: 0 auto;
-  border-radius: 5px;
-}
+
 .formContainer label{
   margin-left: 20px;
 }
@@ -221,6 +94,7 @@ body{
 }
 form h2{
   justify-content: center;
+  margin-left: 160px ;
 
 }
 
@@ -262,4 +136,19 @@ margin-left: 10px;
   font-size: 15px;
   font-weight: bold;
 
+}
+.radioForm{
+  display: block;
+}
+.radioButton input{
+  background-color: red;
+  margin-left: 30px;
+}
+.labelsMpesa{
+  margin-left: 20px;
+  margin-top: 51px;
+}
+.labelsBank {
+  margin-left: 20px;
+  margin-top: 2px;
 }
