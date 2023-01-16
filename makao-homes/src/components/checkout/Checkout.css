@@ -1,0 +1,67 @@
+.formContainer {
+    background-color:antiquewhite;
+    max-width: 600px;
+    height: 700px;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.Checkout {
+    width: 500px;
+    height: 700px;
+    position: relative;
+    top: 5%;
+    left: 40%;
+    margin-top: 100px;
+
+}
+
+.mpesaForm input {
+    margin-left: 20px;
+    margin-top: 10px;
+    display: block;
+    height: 20px;
+    border-radius: 5px;
+    font-size: 15px;
+    width: 300px;
+}
+
+.mpesaForm button{
+    display: block;
+    margin-left: 20px;
+    margin-top: 10px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: green;
+    width: 300px;
+   
+}
+
+.mpesaForm label{
+    margin-left: 20px ;
+}
+.bankForm label{
+   
+    display: block;
+    margin: 10px;
+    width: 300px;
+}
+.bankForm input{
+    width: 300px;
+    margin:10px;
+    height: 30px;
+    font-size: 15px;
+}
+.bankForm button{
+    display:block;
+    width: 305px;
+    margin: 10px;
+    height:30px;
+    border-radius: 5px;
+    background-color: green;
+}
+.bankForm select{
+    margin: 10px;
+    width: 300px;
+}
