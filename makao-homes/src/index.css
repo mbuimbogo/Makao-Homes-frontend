@@ -1,6 +1,26 @@
 /* body {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap'); 
+
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+
+
+body {
+  margin: 0;
+  font-family: 'Poppins', 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -152,5 +172,94 @@ body{
   top: 5%;
   left: 40%;
   margin-top: 100px;
+
+}
+.container {
+  max-width: 1230px;
+  margin:auto;
+}
+
+.btn {
+  color: white;
+  padding: 12px 24px;
+  background-image: linear-gradient(45deg, #40A989 0%, #40A989 100%);
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: .4s;
+}
+
+.btn:active {
+  transform: translate(4px);
+  box-shadow: 0px 0px 1px rgba(0,0,0,0,.2);
+  border-bottom: none;
+}
+/* Checkout Styling */
+.formContainer{
+  background-color:darkgray;
+  max-width: 600px;
+  height: 700px;
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+.formContainer label{
+  margin-left: 20px;
+}
+
+.mpesaForm{
+  display: block;
+  align-items: center;
+}
+.mpesaForm label{
+  margin-left: 10px;
+}
+
+.mpesaForm input{
+  margin-left: 10px;
+}
+form h2{
+  justify-content: center;
+
+}
+
+form h4{
+margin-left: 10px;
+
+}
+.radioButton input{
+
+  margin-left: 100px;
+}
+.bankForm {
+
+ 
+  display:block;
+  align-items: center;
+ 
+}
+.bankForm select{
+  margin-top:10px;
+}
+ label .option{
+  margin-top: 10px;
+  margin-left: 50px;
+
+}
+ .enter{
+  margin-top: 50px;
+ 
+}         
+.bankForm input{
+  margin-left: 15px;
+  border-radius: 10px;
+}       
+.bankForm select{
+  width: 200x;
+  height: 30px;
+  border: 5px;
+  font-size: 15px;
+  font-weight: bold;
 
 }
