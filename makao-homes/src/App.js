@@ -7,8 +7,8 @@ import React from "react";
 // import You from "./components/you/You";
 // import Testimonial from "./components/testimony/Testimonial";
 // import AddProperty from "./components/AddProperty";
-import Checkout from "./components/checkout/Checkout";
-//  import Dashboard from "./components/dashboard/Dashboard";
+// import Checkout from "./components/checkout/Checkout";
+ import Dashboard from "./components/dashboard/Dashboard";
 // import AddProperty from "./components/addproperty/AddProperty";
 
 
@@ -25,12 +25,9 @@ function App() {
       <You />
       <Testimonial /> */}
       {/* <AddProperty/> */}
-      {/* <Dashboard/> */}
-      {/* <Routes> */}
-        {/* <Route path="/" element={<Dashboard/>}/> */}
-       
-      {/* </Routes> */}
-      <Checkout/>
+      <Dashboard/>
+     
+      {/* <Checkout/> */}
 
 
     </>
