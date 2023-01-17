@@ -62,7 +62,7 @@ function Checkout() {
                     <option>I&M Bank</option>
                     <option>Access Bank</option>
                     </select>
-                    <label className="enter">Enter your bank account number</label> <input type='number'
+                    <label className="enter">Enter your bank account number:</label> <input type='number'
                      placeholder="Enter Your Account Number"/>
 
                      <button type="submit">Checkout</button>

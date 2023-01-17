@@ -1,17 +1,20 @@
 import React from 'react'
 import {useState,useEffect} from 'react'
+import Listingsform from '../allListingform/Listingsform'
 
 function AllListings() {
     const [list,setList]=useState([])
 
 useEffect(()=>{
-    fetch("http://localhost:4000/newproperty")
+    fetch("https://makao-homes.onrender.com/properties")
       .then((r) => r.json())
       .then((list) => setList(list));
 },[])
 
   return (
-    <div>AllListings</div>
+    <div>
+      <Listingsform item={list}/>
+    </div>
   )
 }
 

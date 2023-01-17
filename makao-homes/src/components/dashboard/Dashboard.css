@@ -15,20 +15,64 @@
 .menu {
     
     width: 300px;
-    height: 705px;
+    height: 500px;
     background-color: #120c0f;
     margin-left: 0px;
     font: white;
+    font-size: larger;
+    display: inline-block;
+   
     
 
 }
 
 .Listings{
-    background-color: white;
+    background-color:antiquewhite;
     padding-top: 5px;
     margin-left:300px;
-    width: 84%;
-    height: 700px;
+    width: 80%;
+    height: 500px;
     grid-column-gap: 0;
+   
 
 }
+button{
+    background-color: #41A989;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    font-weight: bolder;
+    margin-left: 80px;
+    margin-top: 20px;
+    cursor: pointer;
+
+}
+.icon{
+    float: right;
+    color: white;
+  
+    margin-left: 20px;
+    
+}
+
+.icon text{
+    color:white;
+}
+
+
+h3{
+    color: white;
+    margin-left: 80px;   
+    margin-top: -50px;
+}
+.dashIcon{
+    display: inline-block;
+
+    
+    
+}
+.ticon{
+    margin-left: 20px;
+}
+
+

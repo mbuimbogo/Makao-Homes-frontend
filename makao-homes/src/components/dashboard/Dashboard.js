@@ -3,25 +3,28 @@ import React from 'react'
 import { Routes, Route } from "react-router-dom";
 import './Dashboard.css'
 import {FaHome} from 'react-icons/fa'
+import {CgUserList} from 'react-icons/cg'
+import {RxListBullet} from 'react-icons/rx'
+import {AiFillDashboard} from 'react-icons/ai'
 import {  NavLink } from "react-router-dom";
 import MyListings from '../myListings/MyListings';
 import AllListings from '../allListings/AllListings';
-import AddProperty from '../AddProperty';
+import AddProperty from '../addproperty/AddProperty';
 
 
 function Dashboard() {
 
   /* Add basic styling for NavLinks */
-const linkStyles = {
-  display: "block",
-  width: "50px",
-  padding: "12px 12px 12px 50px",
-  // margin: "0 6px 6px",
-  // background: "blue",
-  textDecoration: "none",
+// const linkStyles = {
+//   display: "block",
+//   width: "50px",
+//   padding: "50px 12px 12px 50px",
+//   textDecoration: "none",
+//   color:"white",
+//   marginLeft: "-20px"
   
   
-};
+// };
 
   return (
     <div>
@@ -30,50 +33,84 @@ const linkStyles = {
          
             
                 <div className='menu'>
+                  <div className='links'>
+                    <div className='dashIcon'>
+                   <p><AiFillDashboard size={40} color="white" className='ticon'/></p>
+                   <h3>Dashboard</h3>
+                   </div>
+
+                  <NavLink
+                  to='/'
+                  >
+                       <div className='dashIcon'>
+                   <p><FaHome size={40} color="white" className='ticon'/></p>
+                   <h3>Home</h3>
+                   </div>
+                   </NavLink>
+
+                    <NavLink
+                    to="/mylistings"
+                    >
+                       <div className='dashIcon'>
+                   <p><CgUserList size={40} color="white" className='ticon'/></p>
+                   <h3>My Listings</h3>
+                   </div>
+                   </NavLink>
+
+                  <NavLink 
+                  to="/allListings"
+                  >
+                       <div className='dashIcon'>
+                   <p><RxListBullet size={40} color="white" className='ticon'/></p>
+                   <h3>All Listings</h3>
+                   </div>
+                   </NavLink>
+
+                        <NavLink 
+                  to="/sell"
+                  >
+                       
+                   
+                   <button>Sell With Us</button>
+                  
+                   </NavLink>
+
+                    
+
+                   
                 
-                     <NavLink
+      {/* <NavLink
         to="/"
-        exact
-        style={linkStyles}
-        activeStyle={{
-          background: "darkblue",
-        }}
+        
+       
       >
-        <FaHome size={40} color="white"/>Home
+        <FaHome size={30} className="icon" /> Home
       </NavLink>
                
       <NavLink
         to="/mylistings"
-        exact
-        style={linkStyles}
-        activeStyle={{
-          background: "darkblue",
-        }}
+        
+       
       >
+        <CgUserList size={30} className='icon'/>
         MyListings
       </NavLink>
                 
       <NavLink
         to="/allListings"
-        exact
-        style={linkStyles}
-        activeStyle={{
-          background: "darkblue",
-        }}
+       
+      
       >
-        AllListings
+        <RxListBullet size={30} className='icon'/>AllListings
       </NavLink>
 
           <NavLink
         to="/sell"
-        exact
         style={linkStyles}
-        activeStyle={{
-          background: "darkblue",
-        }}
       >
        <button>Sell With Us</button>
-      </NavLink>
+      </NavLink> */}
+      </div>
 
     </div>   
                  
