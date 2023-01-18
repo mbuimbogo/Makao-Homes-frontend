@@ -19,6 +19,7 @@ function Signup(props){
     alert('Account created successfully');
     evt.preventDefault();
     evt.target.reset();
+
     fetch('https://makao-homes.onrender.com/api/v1/users', {
       method: 'POST',
       headers: {
@@ -27,13 +28,15 @@ function Signup(props){
       },
       body: JSON.stringify(state)
     })
+
       .then(res => res.json())
       .then(data => {
+        
         setUserdetails([
           ...userdetails,
           data
         ]);
-        
+
         setState({
           name:"",
           username:"",

@@ -12,8 +12,8 @@ function Login(props) {
   });
 
 
-  const userdetails = props.userdetails;
-  const setUserdetails = props.setUserdetails;
+  // const userdetails = props.userdetails;
+  // const setUserdetails = props.setUserdetails;
 
 
   const handleSubmit = (e) => {
@@ -32,7 +32,7 @@ function Login(props) {
     
       .then((res) => res.json())
       .then((data) => {
-        
+
         setValues({
           username: "",
           password: "",
