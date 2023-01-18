@@ -14,7 +14,7 @@ const people = [
         name: "James Doakes",
         title: "Project Manager",
         quote: 
-        ".Makao Homes provided me with the necessary office space i needed to boost the growth of my company and to run my business",
+        "Makao Homes provided me with the necessary office space i needed to boost the growth of my company and to run my business",
     },
 
 
