@@ -39,9 +39,16 @@ function AddProperty() {
 
       .then((r)=>r.json())
       
-      .then((newData)=>console.log(newData))
-      setPropertyData ('')
-      
+      .then((newData)=>{
+        console.log(newData)
+        setPropertyData({
+        name:"",
+        location:'',
+        price:'',
+        image_url:'',
+        description:'',
+        property_type:''})
+      })
   }
   
 

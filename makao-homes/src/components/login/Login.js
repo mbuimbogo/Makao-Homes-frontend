@@ -32,6 +32,12 @@ function Login(props) {
     
       .then((res) => res.json())
       .then((data) => {
+        
+        setValues({
+          username: "",
+          password: "",
+        })
+
         if (data.jwt) {
           localStorage.setItem("jwt", data.jwt);
           const role = data.user.role;
@@ -52,12 +58,7 @@ function Login(props) {
       });
   };
 
-  // function handleChange(e) {
-  //   setState({
-  //     ...state,
-  //     [e.target.name]: e.target.value,
-  //   });
-  // }
+
 
 
   const navigate = useNavigate()
