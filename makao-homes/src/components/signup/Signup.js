@@ -33,7 +33,13 @@ function Signup(props){
           ...userdetails,
           data
         ]);
-        setState("")
+        
+        setState({
+          name:"",
+          username:"",
+          password: "",
+          role: ""
+        })
       })
   }
 
