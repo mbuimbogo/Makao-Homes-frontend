@@ -14,7 +14,7 @@ const people = [
         name: "James Doakes",
         title: "Project Manager",
         quote: 
-        ".Makao Homes provided me with the necessary office space i needed to boost the growth of my company and to run my business",
+        "Makao Homes provided me with the necessary office space i needed to boost the growth of my company and to run my business",
     },
 
 
@@ -38,3 +38,15 @@ const people = [
 ];
 
 export default people
+
+
+export const footer = [
+    {
+      title: "Company",
+      text: [{ list: "Privacy Policy" }, { list: "Terms and Conditions" }],
+    },
+    {
+      title: "About",
+      text: [{ list: "Testimonials" }, { list: "Contact Us"}],
+    },
+  ]
